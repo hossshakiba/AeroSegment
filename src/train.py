@@ -135,6 +135,7 @@ if __name__=="__main__":
     t_val = A.Compose([
         A.Resize(IMAGE_HEIGHT, IMAGE_WIDTH, interpolation=cv2.INTER_NEAREST),
         A.HorizontalFlip(),
+        A.VerticalFlip(), 
         A.GridDistortion(p=0.2),
     ])
 

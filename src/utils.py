@@ -71,7 +71,7 @@ def save_predictions_as_imgs(model, loader, folder, device):
             
             # Plot segmentation output
             axes[1].imshow(output_image, cmap='viridis')
-            axes[1].set_title("Segmentation")
+            axes[1].set_title("AeroSegment")
             axes[1].axis('off')
             
             # Plot ground truth
