@@ -22,7 +22,10 @@ The U-Net architecture, introduced by Ronneberger et al. in their landmark paper
 
 ### CBAM
 
-The Convolutional Bottleneck Attention Module (CBAM), proposed by Woo et al. in "CBAM: Convolutional Block Attention Module" (2018), is an attention mechanism for CNNs. CBAM combines channel-wise and spatial attention to enhance feature representation by focusing on essential channels and spatial regions.
+The Convolutional Bottleneck Attention Module (CBAM), proposed by Woo et al. in "CBAM: Convolutional Block Attention Module" (2018), is an attention mechanism for CNNs. CBAM combines channel-wise and spatial attention to enhance feature representation by focusing on essential channels and spatial regions. The following figure shows an overview of the CBAM attention mechanism:
+<p class="row" float="left" align="middle">
+<img style="width: 60%; height: auto;" src="images/cbam.png"/>
+</p>
 
 ## Experimental Results
 
