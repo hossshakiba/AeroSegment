@@ -13,7 +13,7 @@ from sklearn.model_selection import train_test_split
 import albumentations as A
 import cv2
 
-from models.model import UNET
+from models.model import AeroSegment
 from dataset import DroneDataset, create_df
 from utils import (
     pixel_accuracy,
@@ -146,7 +146,7 @@ if __name__=="__main__":
         "val_loader": DataLoader(val_set, batch_size=BATCH_SIZE, shuffle=True)
     }
 
-    model = UNET(in_channels=3, out_channels=23).to(DEVICE)
+    model = AeroSegment(in_channels=3, out_channels=23).to(DEVICE)
     criterion = nn.CrossEntropyLoss()
     optimizer = optim.Adam(model.parameters(), lr=LEARNING_RATE)
 
