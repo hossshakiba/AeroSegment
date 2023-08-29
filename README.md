@@ -4,7 +4,7 @@ This repository presents a ground-up implementation of a semantic segmentation m
 
 ## Dataset Overview
 
-The **Semantic Drone Dataset** is employed for training and evaluation. The dataset focuses on providing semantic understanding of urban scenes, captured from a bird's eye view using a high-resolution camera. The key details of the dataset are as follows:
+The **Semantic Drone Dataset** is employed for training and evaluation. The dataset focuses on providing a semantic understanding of urban scenes captured from a bird's eye view using a high-resolution camera. The key details of the dataset are as follows:
 
 - The dataset comprises imagery from more than 20 houses captured at altitudes ranging from 5 to 30 meters above the ground.
 - Images are acquired with a high-resolution camera at a size of 6000x4000 pixels (24 megapixels).
@@ -15,7 +15,10 @@ You can download the dataset from [here](https://www.kaggle.com/datasets/bulents
 The implemented model is based on the U-Net architecture, which has shown significant success in various semantic segmentation tasks. Additionally, the model incorporates the Convolutional Bottleneck Attention Module (CBAM) to enhance feature representation. 
 ### U-Net
 
-The U-Net architecture, introduced by Ronneberger et al. in their landmark paper "U-Net: Convolutional Networks for Biomedical Image Segmentation" (2015), revolutionized image segmentation. This design employs an innovative "U" shape, comprising an encoder and a decoder. The encoder captures global context via convolutions and pooling, while the decoder restores spatial information through transposed convolutions. Crucially, skip connections fuse high-level features from the encoder with intricate details from the decoder, enabling precise segmentation. The following figure demonstrates the overall architecture of the U-Net model:
+The U-Net architecture, introduced by Ronneberger et al. in their landmark paper "U-Net: Convolutional Networks for Biomedical Image Segmentation" (2015), revolutionized image segmentation. This design employs an innovative "U" shape comprising an encoder and a decoder. The encoder captures global context via convolutions and pooling, while the decoder restores spatial information through transposed convolutions. Crucially, skip connections fuse high-level features from the encoder with intricate details from the decoder, enabling precise segmentation. The following figure demonstrates the overall architecture of the U-Net model:
+<p class="row" float="left" align="middle">
+<img style="width: 60%; height: auto;" src="images/u-net-architecture.png"/>
+</p>
 
 ### CBAM
 
