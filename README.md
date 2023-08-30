@@ -17,14 +17,14 @@ The implemented model is based on the U-Net architecture, which has shown signif
 
 The U-Net architecture, introduced by Ronneberger et al. in their landmark paper "U-Net: Convolutional Networks for Biomedical Image Segmentation" (2015), revolutionized image segmentation. This design employs an innovative "U" shape comprising an encoder and a decoder. The encoder captures global context via convolutions and pooling, while the decoder restores spatial information through transposed convolutions. Crucially, skip connections fuse high-level features from the encoder with intricate details from the decoder, enabling precise segmentation. The following figure demonstrates the overall architecture of the U-Net model:
 <p class="row" float="left" align="middle">
-<img style="width: 60%; height: auto;" src="images/u-net-architecture.png"/>
+<img style="width: 70%; height: auto;" src="images/u-net-architecture.png"/>
 </p>
 
 ### CBAM
 
 The Convolutional Bottleneck Attention Module (CBAM), proposed by Woo et al. in "CBAM: Convolutional Block Attention Module" (2018), is an attention mechanism for CNNs. CBAM combines channel-wise and spatial attention to enhance feature representation by focusing on essential channels and spatial regions. The following figure shows an overview of the CBAM attention mechanism:
 <p class="row" float="left" align="middle">
-<img style="width: 60%; height: auto;" src="images/cbam.png"/>
+<img style="width: 70%; height: auto;" src="images/cbam.png"/>
 </p>
 
 ## Experimental Results
@@ -39,6 +39,51 @@ Leveraging the Albumentations library, data augmentation techniques were applied
 
 ### Results
 We evaluated our model using Pixel Accuracy (PA) and Mean Intersection over Union (MIoU) metrics. The model achieved an impressive **86.66%** PA and demonstrated a significant MIoU score of **0.5333**, underscoring its proficiency in semantic segmentation. To further illustrate the effectiveness of our model, we present visual comparisons between its segmentation results and the corresponding ground truth labels.
+<p class="row" float="left" align="middle">
+<img style="width: 70%; height: auto;" src="images/1.png"/>
+</p>
+<p class="row" float="left" align="middle">
+<img style="width: 70%; height: auto;" src="images/2.png"/>
+</p>
+<p class="row" float="left" align="middle">
+<img style="width: 70%; height: auto;" src="images/3.png"/>
+</p>
+<p class="row" float="left" align="middle">
+<img style="width: 70%; height: auto;" src="images/4.png"/>
+</p>
+<p class="row" float="left" align="middle">
+<img style="width: 70%; height: auto;" src="images/5.png"/>
+</p>
+<p class="row" float="left" align="middle">
+<img style="width: 70%; height: auto;" src="images/6.png"/>
+</p>
+<p class="row" float="left" align="middle">
+<img style="width: 70%; height: auto;" src="images/7.png"/>
+</p>
+<p class="row" float="left" align="middle">
+<img style="width: 70%; height: auto;" src="images/8.png"/>
+</p>
+<p class="row" float="left" align="middle">
+<img style="width: 70%; height: auto;" src="images/9.png"/>
+</p>
+<p class="row" float="left" align="middle">
+<img style="width: 70%; height: auto;" src="images/10.png"/>
+</p>
+<p class="row" float="left" align="middle">
+<img style="width: 70%; height: auto;" src="images/11.png"/>
+</p>
+<p class="row" float="left" align="middle">
+<img style="width: 70%; height: auto;" src="images/12.png"/>
+</p>
+<p class="row" float="left" align="middle">
+<img style="width: 70%; height: auto;" src="images/13.png"/>
+</p>
+<p class="row" float="left" align="middle">
+<img style="width: 70%; height: auto;" src="images/14.png"/>
+</p>
+<p class="row" float="left" align="middle">
+<img style="width: 70%; height: auto;" src="images/15.png"/>
+</p>
 
 ## Requirements
 The following hardware and software were used for training the model:
