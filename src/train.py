@@ -106,7 +106,7 @@ if __name__=="__main__":
     # Hyperparameters
     LEARNING_RATE = 1e-3
     BATCH_SIZE = 16
-    NUM_EPOCHS = 30
+    NUM_EPOCHS = 150
     IMAGE_HEIGHT = 256  # 6000 originally
     IMAGE_WIDTH = 256  # 4000 originally
 
